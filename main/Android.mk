@@ -109,6 +109,9 @@ endif
 ifeq ($(TARGET_PRODUCT), full_maguro)
      LOCAL_CFLAGS += -DTARGET_MAGURO
 endif
+ifeq ($(TARGET_PRODUCT), cm_grouper)
+     LOCAL_CFLAGS += -O2
+endif
 
 # Fix this
 #ifeq ($(TARGET_VARIANT), eng)
